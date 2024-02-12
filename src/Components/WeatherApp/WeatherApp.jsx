@@ -10,11 +10,11 @@ import rain_icon from '../Assets/rain.png';
 import snow_icon from '../Assets/snow.png';
 import wind_icon from '../Assets/wind.png';
 
+
 const WeatherApp = () => {
 
     let api_key = "YOUR_USER_API_KEY"
     const [wicon, setWicon] = useState(clear_icon);
-
 
     const search = async () => {
         const element = document.getElementsByClassName("cityInput");
@@ -65,7 +65,10 @@ const WeatherApp = () => {
   return (
     <div className="container">
         <div className="top-bar">
-            <input type="text" className="cityInput" placeholder="Search" />
+            <input type="text" className="cityInput" placeholder="Search" onKeyDown={(e) => {
+                                                                                if (e.key === "Enter")
+                                                                                    search();
+            }}/>
             <div className="search-icon" onClick={()=>{search()}}>
                 <img src={search_icon} alt="" />
             </div>
