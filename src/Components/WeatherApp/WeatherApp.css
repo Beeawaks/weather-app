@@ -1,8 +1,8 @@
 .container{
     width: 607px;
-    height: 809px;
+    height: 1080px;
     margin: auto;
-    margin-top: 75px;
+    margin-top: 48px;
     border-radius: 12px;
     background-image: linear-gradient(180deg, #130754 0%, #3b2f80 100%);
 }
@@ -24,7 +24,7 @@
     border-radius: 40px;
     padding-left: 40px;
     color: #626262;
-    font-size: 20px;
+    font-size: 32px;
     font-weight: 400;
 }
 
@@ -40,12 +40,21 @@
 }
 
 .weather-image{
-    margin-top: 29px;
+    margin-top: 8px;
     display: flex;
     justify-content: center;
 }
 
+.weather-type{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 44px;
+    font-weight: 400;   
+}
+
 .weather-temp{
+    margin-top: 8px;
     display: flex;
     justify-content: center;
     color: white;
@@ -87,4 +96,18 @@
 
 .icon{
     margin-top: 10px;
+}
+
+.detail-button{
+    margin-top: 16px;
+    color: white;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+.detail-container{
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-top: 12px;
 }
