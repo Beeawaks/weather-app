@@ -1,6 +1,6 @@
 .container{
     width: 607px;
-    height: 809px;
+    height: 1080px;
     margin: auto;
     margin-top: 48px;
     border-radius: 12px;
@@ -40,12 +40,21 @@
 }
 
 .weather-image{
-    margin-top: 29px;
+    margin-top: 8px;
     display: flex;
     justify-content: center;
 }
 
+.weather-type{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 44px;
+    font-weight: 400;   
+}
+
 .weather-temp{
+    margin-top: 8px;
     display: flex;
     justify-content: center;
     color: white;
@@ -87,4 +96,18 @@
 
 .icon{
     margin-top: 10px;
+}
+
+.detail-button{
+    margin-top: 16px;
+    color: white;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+.detail-container{
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-top: 12px;
 }
